@@ -20,7 +20,7 @@ export default function Final() {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', gap: '40px', padding: '20px' }}>
       <div style={{ textAlign: 'center', maxWidth: '600px' }}>
         <h1 style={{ fontSize: '48px', margin: '0 0 20px 0' }}>
-          I'll get you {flowers} flower{flowers > 1 ? 's' : ''}
+          I'll get you {flowers === 1 ? 'a flower' : `${flowers} flowers`}
         </h1>
         <div style={{ fontSize: '64px', margin: 0, display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
           {Array(flowers).fill(0).map((_, i) => (
