@@ -15,7 +15,7 @@ export default function Page10() {
           setProgress(prev => {
             if (prev >= 100) {
               clearInterval(intervalRef.current)
-              navigate('/')
+              navigate('/final')
               return 100
             }
             return prev + 2

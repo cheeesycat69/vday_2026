@@ -47,7 +47,7 @@ export default function Page9() {
       </div>
       <div style={{ position: 'relative', width: '200px', height: '60px' }}>
         <button 
-          onClick={() => navigate('/10')}
+          onClick={() => navigate('/final')}
           style={{ 
             padding: '15px 40px', 
             fontSize: '20px', 

@@ -9,6 +9,7 @@ import Page7 from './pages/Page7'
 import Page8 from './pages/Page8'
 import Page9 from './pages/Page9'
 import Page10 from './pages/Page10'
+import Final from './pages/Final'
 import Success from './pages/Success'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/8" element={<Page8 />} />
         <Route path="/9" element={<Page9 />} />
         <Route path="/10" element={<Page10 />} />
+        <Route path="/final" element={<Final />} />
         <Route path="/success" element={<Success />} />
       </Routes>
     </HashRouter>
