@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Page1 from './pages/Page1'
 import Page2 from './pages/Page2'
 import Page3 from './pages/Page3'
@@ -13,7 +13,7 @@ import Success from './pages/Success'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Page1 />} />
         <Route path="/2" element={<Page2 />} />
@@ -27,6 +27,6 @@ export default function App() {
         <Route path="/10" element={<Page10 />} />
         <Route path="/success" element={<Success />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
