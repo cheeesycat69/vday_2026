@@ -1,7 +1,13 @@
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function Page3() {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    document.body.classList.add('allow-scroll')
+    return () => document.body.classList.remove('allow-scroll')
+  }, [])
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>

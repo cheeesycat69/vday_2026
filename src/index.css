@@ -8,8 +8,23 @@ body {
   font-family: 'Courier New', monospace;
   background: #fff;
   color: #000;
+  overflow: hidden;
+}
+
+body.allow-scroll {
+  overflow: auto;
 }
 
 #root {
   min-height: 100vh;
+}
+
+h1 {
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px !important;
+  }
 }
